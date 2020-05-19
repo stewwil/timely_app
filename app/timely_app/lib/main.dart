@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
           //put color name here for reference
           primaryColor: Color(0xFF80E1D1),
           //put color name here for reference
-          canvasColor: Colors.transparent),
           fontFamily: "Montserrat",
-                       //nice basic font
+          //nice basic font
+          canvasColor: Colors.transparent),   
       home: Home(),
     );
   }
