@@ -1,20 +1,17 @@
-//Only putting main method and basic theme rules here, main code in home.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'home.dart';
 
 void main() {
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]) 
-  //prevents issues with trying to switch to landscape 
-  //very basic, simply forces portrait mode
-      .then((_) {                                                       
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+  //this is a simple way to force portrait mode
+      .then((_) {
     runApp(new MyApp());
-    });
+  });
 }
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-  // Contains most of the overarching theme rules and colors
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,12 +19,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           hintColor: Color(0xFFC0F0E8),
-          //put color name here for reference
+            //add color description for reference
           primaryColor: Color(0xFF80E1D1),
-          //put color name here for reference
+          //add color description for reference
           fontFamily: "Montserrat",
-          //nice basic font
-          canvasColor: Colors.transparent),   
+            //good basic font
+          canvasColor: Colors.transparent),
       home: Home(),
     );
   }
