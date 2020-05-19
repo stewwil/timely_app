@@ -22,9 +22,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           hintColor: Color(0xFFC0F0E8),
+          //put color name here for reference
           primaryColor: Color(0xFF80E1D1),
+          //put color name here for reference
           canvasColor: Colors.transparent),
           fontFamily: "Montserrat",
+                       //nice basic font
       home: Home(),
     );
   }
